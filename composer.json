@@ -1,0 +1,33 @@
+{
+    "name": "coccoc/test",
+    "description": "Test for Senior PHP developer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "khoiv",
+            "email": "laivankhoi318@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/database": "^5.4",
+        "illuminate/events": "^5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
